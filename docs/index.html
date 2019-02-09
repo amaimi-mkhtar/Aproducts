@@ -1,0 +1,129 @@
+<!doctype html >
+<html lang="en" class="perfect-scrollbar-on">
+<head>
+  <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    
+
+    <title>AmaimiProducts</title>
+    <base href="/">    
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="/assets/css/paceLoader.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/fonts/themify/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="/assets/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/fonts/elegant-font/html-css/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/animsition/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="/assets/vendor/lightbox2/css/lightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/util.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    
+    <script src="/assets/js/pace.min.js"></script>
+<link rel="stylesheet" href="styles.0e4338761429b4eb16ac.css"></head>
+<body class="animsition" >
+
+
+
+  <app-root ></app-root>
+
+
+
+
+  
+      <script type="text/javascript" src="runtime.b57bf819d5bdce77f1c7.js"></script><script type="text/javascript" src="polyfills.05e428c7deb03eca82a1.js"></script><script type="text/javascript" src="main.716f620550c5f114a31b.js"></script></body>
+
+     
+<!--Scripts -->  
+<script type="text/javascript">
+  pace.start();
+  pace.restart();
+  
+  function TopScroll(){
+  $("html, body").animate({ scrollTop:0}, "slow");
+  }
+</script>
+
+<!--===============================================================================================-->
+<script type="text/javascript" src="/assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="/assets/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="/assets/vendor/bootstrap/js/popper.js"></script>
+	<script type="text/javascript" src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="/assets/vendor/select2/select2.min.js"></script>
+	<script type="text/javascript">
+		$(".selection-1").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect2')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="/assets/vendor/slick/slick.min.js"></script>
+	<script type="text/javascript" src="/assets/js/slick-custom.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="/assets/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="/assets/vendor/lightbox2/js/lightbox.min.js"></script>
+<!--===============================================================================================-->
+	<script type="text/javascript" src="/assets/vendor/sweetalert/sweetalert.min.js"></script>
+	<script type="text/javascript">
+	
+
+		$('.block2-btn-addwishlist').each(function(){
+			var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
+			$(this).on('click', function(){
+				swal(nameProduct, "is added to wishlist !", "success");
+			});
+		});
+		
+			</script>
+
+	<script src="/assets/js/main.js"></script>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+          
+</html>
